@@ -1,7 +1,7 @@
 The Bert folder is cloned from Google's official repository (git pull git@github.com:google-research/bert.git). I have edited the run_classifier.py file to make it compatible with our processed ChnSentiCorp data.
 
 
-# 1. Download and extract the BERT base Chinese monolanguage model into ./bert/models
+#### 1. Download and extract the BERT base Chinese monolanguage model into ./bert/models
 ```
 mkdir $PROJ/bert/models
 cd $PROJ/bert/models
@@ -9,15 +9,15 @@ wget https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-
 unzip chinese_L-12_H-768_A-12.zip
 ```
 
-# 2. (skip 2 & 3 if you want to use the processed data) unzip the ChnSentiCorp data
+#### 2. (skip 2 & 3 if you want to use the processed data) unzip the ChnSentiCorp data
 ```
 cd $PROJ/data/raw/
 unzip chnsenticorp.zip ./data/raw/
 ```
 
-# 3. (skip 2 & 3 if you want to use the processed data) Run process_csc.ipynb to process the raw files
+#### 3. (skip 2 & 3 if you want to use the processed data) Run process_csc.ipynb to process the raw files
 
-# 4. Run the following command to train and evaluate the models
+#### 4. Run the following command to train and evaluate the models
 The official document from Google used python2 and TensorFlow 1.11 I ran the code with python3.6 and TensorFlow 1.10 without error.
 
 Increasing the max_seq_length and / or train_batch_size might yield better results. My PC (GTX 1070) is limited to 128 / 20.
