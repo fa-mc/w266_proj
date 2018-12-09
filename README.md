@@ -1,3 +1,6 @@
+# Chinese Sentiment Analysis with Google BERT
+### Instructions
+
 The Bert folder is cloned from Google's official repository (git pull git@github.com:google-research/bert.git). I have edited the run_classifier.py file to make it compatible with our processed ChnSentiCorp data.
 
 
